@@ -8,6 +8,15 @@ function toFahrenheit(){
   newTemp = (newTemp / 5);
   newTemp = (newTemp + 32);
 
+  newTemp = Math.floor(newTemp);
+  if (newTemp <= 32){
+    document.getElementById("newTemp").className += "cold";
+  } else if (newTemp >= 90){
+    document.getElementById("newTemp").className += "hot";
+  } else {
+    document.getElementById("newTemp").className += "normal";
+  }
+
   document.getElementById("newTemp").value = newTemp;
 }
 
