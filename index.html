@@ -2,27 +2,23 @@
 <html>
 <head>
 	<title>Temp Converter</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <h1>Temperature Converter</h1>
-<p>Fahrenheit to Celsius: Subtract 32 then * by (9/5)
-<p>Celsius to Farenheit: Multiply by (9/5) then add 32
+<p>Fahrenheit to Celsius: - 32 then * by 9 and / 5 </p>
+<p>Celsius to Farenheit: * by 9 then / 5 then add 32</p>
 
-<form>
+<form id="tempForm">
 	<fieldset>
 		<legend>Enter your Temperature</legend>
-		<input type="text" name="temp" id="val1">
-		<select name="scale">
-			<option value="f">Fahrenheit</option>
-			<option value="c">Celsius</option>
-		</select><br>
-		<input type="text" name="temp" id="val2">
-		<select name="scale">
-			<option value="f">Fahrenheit</option>
-			<option value="c">Celsius</option>
-		</select><br>
-		<button id="convert"> Convert</button>
-		<button id="clear">Clear</button>
+		<input type="text" id ="input-temp"> <br>
+		<input type="radio" name ="scale" value="f" id ="f">Convert to Fahrenheit <br>
+		<input type="radio" name="scale" value="c" id="c"> Convert to Celsius <br>
+
+		<button type="button" id="convert"> Convert</button>
+		<button  type ="button" id="resetForm">Reset</button> <br>
+		<input type="text" id="newTemp" placeholder ="Converted Temp">
 	</fieldset>
 </form>
 
