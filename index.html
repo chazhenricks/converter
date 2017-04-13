@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Temp Converter</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h1>Temperature Converter</h1>
+<p>Fahrenheit to Celsius: - 32 then * by 9 and / 5 </p>
+<p>Celsius to Farenheit: * by 9 then / 5 then add 32</p>
+
+<form id="tempForm">
+	<fieldset>
+		<legend>Enter your Temperature</legend>
+		<input type="text" id ="input-temp"> <br>
+		<input type="radio" name ="scale" value="f" id ="f">Convert to Fahrenheit <br>
+		<input type="radio" name="scale" value="c" id="c"> Convert to Celsius <br>
+
+		<button type="button" id="convert"> Convert</button>
+		<button  type ="button" id="resetForm">Reset</button> <br>
+		<input type="text" id="newTemp" placeholder ="Converted Temp">
+	</fieldset>
+</form>
+
+
+<script src="converter.js" type="text/javascript"></script>
+</body>
+</html>
